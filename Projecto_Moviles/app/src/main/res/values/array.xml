@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="data">
+        <item >Seleccionar</item>
+        <item >Huesos</item>
+        <item >Patitas</item>
+        <item >Tu mundo travieso</item>
+        <item >Reino Animal</item>
+        <item >Buen amigo</item>
+        <item >Huellas</item>
+        <item >Happy Pet</item>
+        <item >Especie Animal</item>
+    </string-array>
+
+    <string-array name="data2">
+        <item >Seleccion</item>
+        <item >Perro</item>
+        <item >Gato</item>
+        <item >Conejo</item>
+      
+    </string-array>
+
+    <string-array name="data3">
+        <item >Seleccion</item>
+        <item >1.- Perro</item>
+        <item >2.- Gato</item>
+        <item >3.- Conejo</item>
+
+    </string-array>
+</resources>
