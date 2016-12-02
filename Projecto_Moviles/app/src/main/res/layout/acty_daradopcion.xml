@@ -7,7 +7,7 @@
     android:padding="15dp"
     android:weightSum="1"
     tools:context="com.isil.projecto_moviles.Adopcion"
-
+    android:background="@color/skype"
     >
 
     <Spinner
@@ -99,6 +99,6 @@
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
         android:text="Dar en adopción"
-        />
+        android:onClick="darAdopcion" />
 
 </LinearLayout>

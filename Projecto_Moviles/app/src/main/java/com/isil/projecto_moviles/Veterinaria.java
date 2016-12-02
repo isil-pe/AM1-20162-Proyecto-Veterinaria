@@ -39,6 +39,7 @@ public class Veterinaria extends Activity {
             });
         }
 
+
     private void gotoVerReserva(){
         Intent intent = new Intent(Veterinaria.this, Reserva.class);
         startActivity(intent);
@@ -68,7 +69,7 @@ public class Veterinaria extends Activity {
                 @Override
                 public void onClick(View view) {
                     if (validateFormError()) {
-                        Toast.makeText(Veterinaria.this, "Enviando reserva",
+                        Toast.makeText(Veterinaria.this, "Gracias por realizar tu reserva",
                                 Toast.LENGTH_SHORT).show();
                     } else {
                         Toast.makeText(Veterinaria.this, "Revisar campos",

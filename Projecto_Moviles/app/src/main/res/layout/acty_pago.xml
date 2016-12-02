@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:padding="15dp"
     tools:context="com.isil.projecto_moviles.Guarderia"
-
+    android:background="@color/skype"
     >
 
     <TextView
@@ -25,31 +25,73 @@
         android:textSize="18sp"
         android:spinnerMode="dialog"
         android:id="@+id/spinner"
+        android:entries="@array/dataTarjeta"
         />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:hint="Ingrese su número de tarjeta"
+        android:id="@+id/etNumeroTarjeta"
+        android:inputType="number"
         />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+    <EditText
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Mes"
+        android:inputType="number"
+        android:id="@+id/etMes"
+        />
+    <EditText
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Año"
+        android:inputType="number"
+        android:id="@+id/etAio"
+        />
+    <EditText
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="CVC"
+        android:inputType="number"
+        android:id="@+id/etCvc"
+        />
+    </LinearLayout>
+
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:hint="Ingrese su contaseña"
+        android:id="@+id/etPassword"
+        android:inputType="numberPassword"
+        android:onClick="confirmarOperacion" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="Confirme su contraseña"
+        android:id="@+id/etConfirmarPassword"
+        android:inputType="numberPassword"
 
         />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:hint="Confirme su contraseña"
-        />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
         android:hint="Ingrese su número de token"
+        android:id="@+id/etNumeroToken"
+        android:inputType="number"
+
         />
     <Button
         android:layout_width="wrap_content"
@@ -57,6 +99,7 @@
         android:layout_marginTop="40dp"
         android:text="confirmar operacion"
         android:layout_gravity="center"
-        />
+        android:id="@+id/btnConfirmarOperacion"
+        android:onClick="confirmarOperacion" />
 
 </LinearLayout>

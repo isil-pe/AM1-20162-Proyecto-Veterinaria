@@ -13,21 +13,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Nombre"
+        android:id="@+id/edtNombre"
         />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Apellido"
+        android:id="@+id/edtApellido"
         />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Telefono"
+        android:id="@+id/edtTelefono"
+        android:inputType="number"
         />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Nombre de tu mascota"
+        android:id="@+id/edtNombreMascota"
         />
 
     <LinearLayout
@@ -37,21 +42,34 @@
 
         >
 
-        <Spinner
-            android:layout_width="131dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0.2"
-            android:gravity="left"
-            android:textSize="18sp"
-            android:spinnerMode="dialog"
-            android:id="@+id/spinner"
-            />
+        <RadioGroup
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/rdg">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Horas"
+                android:id="@+id/rdbHoras"
+                android:checked="true" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Días"
+                android:id="@+id/rdbDias"
+                android:checked="false" />
+        </RadioGroup>
 
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.1"
             android:hint="Número de días/horas"
+            android:inputType="number"
+            android:id="@+id/edtNumeroDiasHoras"
             />
     </LinearLayout>
     <LinearLayout
@@ -69,8 +87,9 @@
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:text="monto a pagar"
-                android:id="@+id/btnMontoPagar"
+                android:onClick="montoPagar"
                 />
+
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -83,7 +102,7 @@
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/listView"
+        android:id="@+id/lsvMonto"
         >
 
     </ListView>
