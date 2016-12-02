@@ -59,7 +59,7 @@ String nombreMascota
 Double tiempo           
 Double precio         
 
-
+![](https://github.com/isil-pe/AM1-20162-Proyecto-Veterinaria/blob/master/diagrama.png)
 
 
 
