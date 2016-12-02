@@ -28,14 +28,38 @@ Base de Datos
 
 Veterinaria.db
 
-Tablas:
-Adopción	Cita	Guarderia
-String id	String nombres	String nombres
-String nombre	String apellidos	String apellidos
-String raza	String email	Int teléfono
-Boolean genero	Int teléfono	String nombreMascota
-Int edad	String dirección	Double tiempo
-String color	String veterinaria	Double precio
-	String especieMascota	
+Tablas:   
+
+
+Adopción:   	
+String id	
+String nombre	
+String raza	
+Boolean genero	
+Int edad	
+String color	
+String especieMascota	
+
+
+Cita:   
+String nombres       
+String apellidos        
+String email        
+Int teléfono        
+String dirección          
+String veterinaria       
+String especieMascota     
+
+
+Guarderia:   
+String nombres       
+String apellidos      
+Int teléfono           
+String nombreMascota      
+Double tiempo           
+Double precio         
+
+
+
 
 
